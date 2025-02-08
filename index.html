@@ -16,6 +16,7 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            flex-direction: column; /* Stack containers vertically */
         }
 
         .container {
@@ -25,6 +26,7 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
             text-align: center;
+            margin-bottom: 20px; /* Add space between containers */
         }
 
         h1 {
@@ -78,6 +80,51 @@
         .math-btn:hover {
             background-color: #C0392B; /* Darker Math Red */
         }
+
+        .biology-book-btn {
+            background-color: #8BC34A; /* Biology Green */
+            color: #000000;
+        }
+
+        .biology-book-btn:hover {
+            background-color: #689F38; /* Darker Biology Green */
+        }
+
+        .physics-book-btn {
+            background-color: #29ABE2; /* Physics Blue */
+        }
+
+        .physics-book-btn:hover {
+            background-color: #1E8BC3; /* Darker Physics Blue */
+        }
+
+        .chemistry-book-btn {
+            background-color: #F2CA27; /* Chemistry Yellow */
+        }
+
+        .chemistry-book-btn:hover {
+            background-color: #E4B90A; /* Darker Chemistry Yellow */
+        }
+
+        .math-book-btn {
+            background-color: #E74C3C; /* Math Red */
+        }
+
+        .math-book-btn:hover {
+            background-color: #C0392B; /* Darker Math Red */
+        }
+
+        .book-btn {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.2em;
+            margin: 10px;
+            transition: background-color 0.3s ease;
+            color: #000000;  /* Set a default color */
+        }
     </style>
 </head>
 <body>
@@ -86,10 +133,20 @@
         <p>Your central hub for comprehensive O-Level notes across various subjects.  Prepare for your exams effectively!</p>
 
         <a href="biology_notes.html" class="subject-btn">Biology Notes</a>
-        <a href="physics_notes.html" class="subject-btn physics-btn">Physics Notes</a>
-        <a href="chemistry_notes.html" class="subject-btn chemistry-btn">Chemistry Notes</a>
-        <a href="math_notes.html" class="subject-btn math-btn">Math Notes</a>
+        <a href="subjects/physics_notes.html" class="subject-btn physics-btn">Physics Notes</a>
+        <a href="subjects/chemistry_notes.html" class="subject-btn chemistry-btn">Chemistry Notes</a>
+        <a href="subjects/math_notes.html" class="subject-btn math-btn">Math Notes</a>
 
+    </div>
+
+    <div class="container">
+        <h1>Free O-Level Books</h1>
+        <p>Access a selection of free O-Level textbooks and resources to supplement your learning.</p>
+
+        <a href="books/biology_book.pdf" class="book-btn biology-book-btn" target="_blank">Biology Textbook</a>
+        <a href="books/physics_book.pdf" class="book-btn physics-book-btn" target="_blank">Physics Textbook</a>
+        <a href="books/chemistry_book.pdf" class="book-btn chemistry-book-btn" target="_blank">Chemistry Textbook</a>
+        <a href="books/math_book.pdf" class="book-btn math-book-btn" target="_blank">Math Textbook</a>
     </div>
 </body>
 </html>
